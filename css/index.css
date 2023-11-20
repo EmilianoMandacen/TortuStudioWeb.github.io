@@ -1,0 +1,307 @@
+/* Estilos generales */
+body {
+    background-color: #1E3E5B;
+    font-family: Verdana;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 20px;
+        color: white;
+}
+
+.logotortu {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#txt4 {
+    font-size: 45px;
+    color: #000000;
+    font-family: Verdana;
+}
+
+/* banner */
+.main-inicio {
+    height: 750px;
+    background-image: url(../img/inicio\ fondo2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+}
+
+.sbn {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 30px;
+    margin-top: 70px;
+    /*Animacion*/
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 11ch;
+    animation: typing 2s steps(16), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyFrames typing {
+
+    from {
+        width: 0
+    }
+}
+
+@keyFrames blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+
+.qsomos {
+    color: rgb(252, 252, 252);
+    font-size: 30px;
+    margin-left: 35px;
+}
+
+.qsomos2 {
+    color: rgb(252, 252, 252);
+    font-size: 30px;
+    margin-left: 35px;
+}
+
+
+
+#Viaje {
+    height: 250px;
+    width: 250px;
+}
+
+#comot {
+    height: 250px;
+    width: 250px;
+}
+
+#inte {
+    height: 250px;
+    width: 250px;
+    }
+
+/* contenido */
+.datos {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "caja1 caja4 caja7" "caja2 caja5 caja8" "caja3 caja6 caja9";
+}
+
+
+.caja1 {
+    display: flex;
+    justify-content: center;
+    grid-area: caja1;
+  }
+  
+  .caja2 {
+    display: flex;
+    justify-content: center;
+    grid-area: caja2;
+  }
+  
+  .caja3 {
+    text-align: center;
+    grid-area: caja3;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .caja4 {
+    display: flex;
+    justify-content: center;
+    grid-area: caja4;
+  }
+  
+  .caja5 {
+    grid-area: caja5;
+  }
+  
+  .caja6 {
+    text-align: center;
+    grid-area: caja6;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .caja7 {
+    text-align: center;
+    grid-area: caja7;
+
+  }
+  
+  .caja8 {
+    text-align: center;
+    grid-area: caja8;
+
+  }
+  
+  .caja9 {
+    text-align: center;
+    grid-area: caja9;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ig{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.face{
+    width: 66px;
+    height: 60px;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.mapa{
+    width: 600px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+@media (min-width:500px) and (max-width:700px) {
+    .mapa{
+        width: 400px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+}
+@media (min-width:400px) and (max-width:500px) {
+    .mapa{
+        width: 300px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+}
+@media (min-width:300px) and (max-width:400px) {
+    .mapa{
+        width: 200px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+}
+  @media screen and (max-width:1400px) {
+    .datos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "caja7" "caja8" "caja9";
+      }
+    
+}
+  @media screen and (max-width:1340px) {
+    .qsomos {
+        color: white;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .qsomos2 {
+        color: white;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    
+}
+
+  @media screen and (max-width:990px) {
+    .sbn {
+        color: white;
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .qsomos2 {
+        display: none;
+    }
+
+    .sbn {
+        color: white;
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .qsomos2 {
+        display: none;
+    }
+
+    .sbn {
+        color: white;
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        margin-left: -11px;
+        margin-top: 50px;
+    }
+    .main-inicio {
+        height: 800px;
+        background-image: url(../img/inicio\ fondo2.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 15px;
+    }
+}
